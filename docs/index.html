@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias de la Prehistoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Pantalla de inicio -->
+        <div id="inicio" class="pantalla activa">
+            <h1>HERRAMIENTAS DE HUESO EN LA PREHISTORIA</h1>
+            <button class="boton-inicio" onclick="empezar()">¡VAMOS!</button>
+        </div>
+
+        <!-- Pantalla de historia -->
+        <div id="pantalla-historia" class="pantalla">
+            <div id="historia-progresiva" class="historia-progresiva"></div>
+            <button class="boton-continuar" onclick="mostrarSiguienteEleccion()">CONTINUAR</button>
+        </div>
+
+        <!-- Pantalla de selección de personaje -->
+        <div id="personajes" class="pantalla">
+            <h2>ELIGE TU PERSONAJE</h2>
+            <div class="opciones">
+                <div class="opcion" onclick="elegirPersonaje('niña')">
+                    <img src="personajes/niña.webp" alt="Niña">
+                    <span>NIÑA</span>
+                </div>
+                <div class="opcion" onclick="elegirPersonaje('niño')">
+                    <img src="personajes/niño.png" alt="Niño">
+                    <span>NIÑO</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla de selección de acción -->
+        <div id="acciones" class="pantalla">
+            <h2>¿QUÉ QUIERES HACER?</h2>
+            <div class="opciones">
+                <div class="opcion" onclick="elegirAccion('cazar')">
+                    <img src="acciones/cazar.png" alt="Cazar">
+                    <span>CAZAR</span>
+                </div>
+                <div class="opcion" onclick="elegirAccion('coser')">
+                    <img src="acciones/coser.png" alt="Coser">
+                    <span>COSER</span>
+                </div>
+                <div class="opcion" onclick="elegirAccion('cortar madera')">
+                    <img src="acciones/cortar madera.png" alt="Cortar madera">
+                    <span>CORTAR MADERA</span>
+                </div>
+                <div class="opcion" onclick="elegirAccion('hacer abalorios')">
+                    <img src="acciones/hacer abalorios niño.webp" alt="Hacer abalorios">
+                    <span>HACER ABALORIOS</span>
+                </div>
+                <div class="opcion" onclick="elegirAccion('pescar')">
+                    <img src="acciones/pescar.png" alt="Pescar">
+                    <span>PESCAR</span>
+                </div>
+                <div class="opcion" onclick="elegirAccion('raspar piel')">
+                    <img src="acciones/raspar piel.png" alt="Raspar piel">
+                    <span>RASPAR PIEL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla de celebración -->
+        <div id="celebraciones" class="pantalla">
+            <h2>¿CÓMO QUIERES CELEBRARLO?</h2>
+            <div class="opciones">
+                <div class="opcion" onclick="elegirCelebracion('bailar')">
+                    <img src="celebración/bailar.webp" alt="Bailar">
+                    <span>BAILAR</span>
+                </div>
+                <div class="opcion" onclick="elegirCelebracion('comer')">
+                    <img src="celebración/comer.webp" alt="Comer">
+                    <span>COMER</span>
+                </div>
+                <div class="opcion" onclick="elegirCelebracion('dormir')">
+                    <img src="celebración/dormir.webp" alt="Dormir">
+                    <span>DORMIR</span>
+                </div>
+                <div class="opcion" onclick="elegirCelebracion('pintar')">
+                    <img src="celebración/pintar.webp" alt="Pintar">
+                    <span>PINTAR</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla final -->
+       <!-- Pantalla final -->
+    <!-- Pantalla final -->
+<div id="final" class="pantalla pantalla-final">
+    <div class="contenedor-final">
+        <img src="OTROS/colorín colorado.png" alt="Colorín Colorado" class="colorin-colorado">
+        <button class="boton-final" onclick="volverAEmpezar()">¡OTRO CUENTO!</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
